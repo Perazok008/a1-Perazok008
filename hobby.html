@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CS4241 Assignment 1</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+  <!-- Header section with navigation -->
+  <header>
+    <h1>Gleb Vlasov</h1>
+    <h3>For CS4241-C25</h3>
+    <nav>
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="https://www.wpi.edu" target="_blank">WPI</a></li>
+        <li><a href="https://www.grandviewresearch.com/industry-analysis/video-game-market" target="_blank">Hobby Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- Hobby description article -->
+    <article>
+      <h3>My Hobby</h3>
+      <hr />
+      <p>
+        While not very original, my main hobby is playing videogames. It is simply impossible to beat the endless amount of variation in your experiencess
+        that you get from countless games released every year. From big productions with a budget of a blockbuster movie to smaler projects made by a single person,
+        there is always the game you need somewhere out there. Personally, I preffer games that are more story or narative driven, but I also enjoy a good open-world game.
+      </p>
+    </article>
+
+    <!-- Required form elements article -->
+    <article>
+      <h3>What about You? Share your experience below!</h3>
+      <hr />
+      <form>
+        <!-- Radio button group -->
+        <fieldset> <legend>Gaming Experience</legend>
+          <div class="input-group">
+            <input type="radio" id="never" value="Never" name="gameExperience">
+            <label for="never">Never</label>
+          </div>
+
+          <div class="input-group">
+            <input type="radio" id="longAgo" value="LongAgo" name="gameExperience">
+            <label for="longAgo">Year(s) ago</label>
+          </div>
+
+          <div class="input-group">
+            <input type="radio" id="recently" value="Recently" name="gameExperience">
+            <label for="recently">Played multiple Games this year</label>
+          </div>
+
+          <div class="input-group">
+            <input type="radio" id="always" value="Always" name="gameExperience">
+            <label for="always">Always playing something</label>
+          </div>
+        </fieldset>
+
+        <!-- Checkbox group -->
+        <fieldset> <legend>Familiar Games</legend>
+          <div class="input-group">
+            <input type="checkbox" id="tlz" value="tlz" name="tlz">
+            <label for="tlz">The Legend of Zelda</label>
+          </div>
+
+          <div class="input-group">
+            <input type="checkbox" id="gta" value="gta" name="gta">
+            <label for="gta">Grand Theft Auto</label>
+          </div>
+
+          <div class="input-group">
+            <input type="checkbox" id="sm" value="sm" name="sm">
+            <label for="sm">Super Mario</label>
+          </div>
+
+          <div class="input-group">
+            <input type="checkbox" id="halo" value="halo" name="halo">
+            <label for="halo">Halo</label>
+          </div>
+
+          <div class="input-group">
+            <input type="checkbox" id="tes" value="tes" name="tes">
+            <label for="tes">The Elder Scrolls</label>
+          </div>
+        </fieldset>
+
+        <!-- Dropdown selection -->
+        <label for="importance">On the scale 1-10, how important do you think video games are in modern world?</label>
+        <select id="importance" name="importance">
+          <option value="1">1 - Irrelevant</option>
+          <option value="2">2 - Insignificant</option>
+          <option value="3">3 - Rarely encountered</option>
+          <option value="4">4 - Small scale, niche</option>
+          <option value="5">5 - Slightly affects daily lives</option>
+
+          <option value="6">6 - Significantly affects daily life</option>
+          <option value="7">7 - Important for world</option>
+          <option value="8">8 - Cultural/economic milestone</option>
+          <option value="9">9 - Defines our future</option>
+          <option value="10">10 - Cornerstone of modern world</option>
+        </select>
+
+        <!-- Text input fields -->
+        <label for="favGame">Favorite game if any:</label>
+        <input type="text" id="favGame" name="favGame">
+
+        <!-- Text area -->
+        <label for="favGameWhy">Explain your choice:</label>
+        <textarea id="favGameWhy" name="favGameWhy" rows="10" cols="30"></textarea>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+      </form>
+    </article>
+  </main>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
